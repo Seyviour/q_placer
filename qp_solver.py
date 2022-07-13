@@ -329,13 +329,13 @@ class QpSolver():
 if __name__ == "__main__":
     
     this_solver = QpSolver()
-    #this_solver.read_netlist(r"C:\Users\HP\Documents\courses\vlsi_cad_2_coursera\ProgrammingAssignment3Files\benchmarks\3QP\toy2")
+    #this_solver.read_netlist(r"C:\Users\HP\Documents\courses\vlsi_cad_2_coursera\ProgrammingAssignment3Files\benchmarks\3QP\toy1")
     #this_solver.read_netlist(r"C:\Users\HP\Documents\courses\vlsi_cad_2_coursera\ProgrammingAssignment3Files\benchmarks\8x8 QP\biomed")
-    this_solver.read_netlist(r"C:\Users\HP\Documents\courses\vlsi_cad_2_coursera\ProgrammingAssignment3Files\benchmarks\3QP\fract")
+    #this_solver.read_netlist(r"C:\Users\HP\Documents\courses\vlsi_cad_2_coursera\ProgrammingAssignment3Files\benchmarks\3QP\fract")
     #print(this_solver._netdict)
     print(this_solver._net_gate_dict)
     this_solver._net_dict_to_adjacency_matrix()
     print(this_solver.adjacency_matrix)
-    this_solver.recursive_repartition((32,32), earlystop=(1,1))
+    this_solver.recursive_repartition((4,4), earlystop=(1,1))
     print(this_solver._gate_locations)
-    this_solver.write_locations("fract")
+    this_solver.write_locations("toy1")

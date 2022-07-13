@@ -1,1 +1,1 @@
-Toy Quadratic Wirelength Model based Analytical Solver for ASICs
+Toy Quadratic Wirelength Model based Analytical Solver for ASICs. Implementation follows the description from Professor Rutenbar's "VLSI CAD II: Layout" (Coursera). This solver works well enough to verify that the general implementation is correct but is not optimal.
